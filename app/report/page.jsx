@@ -70,7 +70,7 @@ export default function SubmitReportPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:8000/api/report", {
+      const response = await fetch("https://ngo-backend-amww.onrender.com/api/report", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
