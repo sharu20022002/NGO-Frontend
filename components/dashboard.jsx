@@ -17,7 +17,7 @@ const Dashboard = () => {
         setIsLoading(true);
         if (!month) return;
         const response = await fetch(
-          `http://localhost:8000/api/dashboard?month=${month}`
+          `https://ngo-backend-amww.onrender.com/api/dashboard?month=${month}`
         );
         const data = await response.json();
         console.log(data);
