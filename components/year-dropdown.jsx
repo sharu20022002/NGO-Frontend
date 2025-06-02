@@ -33,7 +33,7 @@ export function Combobox() {
       try {
         setIsLoading(true);
         const response = await fetch(
-          "http://localhost:8000/api/dashboard/months"
+          "https://ngo-backend-amww.onrender.com/api/dashboard/months"
         );
         const data = await response.json();
         const modifiedData = data.map((data) => ({
